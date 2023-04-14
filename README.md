@@ -119,5 +119,23 @@ $tree
 
 ![Screenshot from 2023-04-14 12-16-37](https://user-images.githubusercontent.com/129086783/232112980-815939fe-8415-4d36-8851-1aad3bcf8bbe.png)
 
+**Run the snakemake file
+
+```
+
+$snakemake --cores 2 RScript
+
+```
+
+**Your TextFiles and output directories should now have been popoulated. More importantly there should be a Rplots.pdf file somewhere in the root directory.
+
+**We will take a look out the snakemake output
 
 
+![Screenshot from 2023-04-14 12-20-03](https://user-images.githubusercontent.com/129086783/232113682-fba2b1dd-4471-48ce-802e-5c1a49495351.png)
+
+
+**And the new tree
+
+
+![Screenshot from 2023-04-14 12-21-29](https://user-images.githubusercontent.com/129086783/232113906-6a491742-836f-44d9-a01d-c48a6385944a.png)
