@@ -1,4 +1,5 @@
 Final <- read.table(file = snakemake@input[['txt']], header = FALSE)
+
 colnames(Final)[1] = "Date"
 colnames(Final)[2] = "Name"
 colnames(Final)[3] = "KiloCalories"
@@ -6,6 +7,7 @@ colnames(Final)[4] = "Duration"
 colnames(Final)[5] = "HeartRateMax"
 colnames(Final)[6] = "HeartRateMin"
 colnames(Final)[7] = "HeartRateAvg"
+
 library(ggplot2)
 library(tidyr)
 library(car)
@@ -13,9 +15,13 @@ attach(Final)
 
 print(Final)
 str(Final)
+
 Final$DurationinHours <- ((Final$Duration/60)/(60))
+
 barplot(Final$DurationinHours, main = "Duration of Exercise in Hours", xlab = "Session")
+
 plot(Final,col="blue",pch=19)
+
 #jpeg(file = "JPEGS/Kilocalories.jpeg")
 #barplot(KiloCalories, main = "KiloCalories",xlab="Session",width = 5)
 #dev.off()

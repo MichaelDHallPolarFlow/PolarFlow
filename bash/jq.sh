@@ -1,1 +1,1 @@
-jq '.exercises[] | select(.sport == "INDOOR_CYCLING")' Training/*.json
+jq '.exercises[] | select(.sport == "STRENGTH_TRAINING")' Training/*.json
