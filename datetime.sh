@@ -1,0 +1,1 @@
+jq '.startTime' $1

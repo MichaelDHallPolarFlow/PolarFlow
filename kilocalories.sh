@@ -1,0 +1,1 @@
+jq '.kiloCalories' $1

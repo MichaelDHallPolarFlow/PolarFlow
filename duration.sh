@@ -1,0 +1,1 @@
+jq '.duration' $1
