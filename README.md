@@ -23,10 +23,13 @@ $which conda
 /home/user/miniconda3/condabin/conda
 
 Which version of conda?
+
 $conda --version
+
 conda 23.3.1
 
 If you need help
+
 $conda --help
 
 #########################################################################################################################
