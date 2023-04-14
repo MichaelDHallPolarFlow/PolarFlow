@@ -34,6 +34,8 @@ $ mamba create -c conda-forge -c bioconda -n snakemake snakemake
 
 $ conda activate snakemake
 $ snakemake --help
+
+
 ![Screenshot from 2023-04-14 11-14-15](https://user-images.githubusercontent.com/129086783/232099338-d7443b3e-8f83-4b96-9211-34a2b0096799.png)
 
 
