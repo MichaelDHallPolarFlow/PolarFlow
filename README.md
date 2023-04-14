@@ -10,32 +10,40 @@ https://docs.conda.io/en/latest/miniconda.html
 
 You will then see a bash file downloading that looks similar to this.
 
-Miniconda3-latest-Linux-x86_64.sh
+**Miniconda3-latest-Linux-x86_64.sh**
 
 And then execute the bash script
 
+```
 $bash Miniconda3-latest-Linux-x86_64.sh
+```
+**Verify it has been installed.**
 
-Verify it has been installed.
-
+```
 $which conda
 
 /home/user/miniconda3/condabin/conda
 
-Which version of conda?
+```
+**Which version of conda?
 
+```
 $conda --version
 
 conda 23.3.1
 
-If you need help
+```
 
+**If you need help
+
+```
 $conda --help
 
-#########################################################################################################################
-Verify your linux OS
+```
 
+**Verify your linux OS
 
+```
 $lsb_release -a
 
 Distributor ID:	Ubuntu
@@ -43,28 +51,34 @@ Description:	Ubuntu 22.04.2 LTS
 Release:	22.04
 Codename:	jammy
 
+```
+**You can install all necessary prerequisite software by issuing the following command.
 
-You can install all necessary prerequisite software by issuing the following command.
-
+```
 $bash install.sh
 
-####################################################################################################
+```
 
-If you want to do it step by step.
 
+***If you want to do it step by step.
+
+```
 $sudo apt update
 
 $sudo apt install -y jq
 
-When installation is finished, check jq version:
+```
+**When installation is finished, check jq version:
 
+```
 $jq --version
 
 jq-1.6
 
+```
+**You will also need to install snakemake.
 
-You will also need to install snakemake.
-
+```
 $ conda install -n base -c conda-forge mamba
 
 $ conda activate base
@@ -75,10 +89,23 @@ $ conda activate snakemake
 
 $ snakemake --help
 
+```
 
 ![Screenshot from 2023-04-14 11-14-15](https://user-images.githubusercontent.com/129086783/232099338-d7443b3e-8f83-4b96-9211-34a2b0096799.png)
 
 
-Now you must clone the Github Repository
+**Now you must clone the Github Repository
+
+```
 
 $git clone https://github.com/MichaelDHallPolarFlow/PolarFlow.git
+
+```
+
+**Change Working Directories
+
+```
+
+$cd PolarFlow
+
+```
