@@ -119,7 +119,31 @@ $tree
 
 ![Screenshot from 2023-04-14 12-16-37](https://user-images.githubusercontent.com/129086783/232112980-815939fe-8415-4d36-8851-1aad3bcf8bbe.png)
 
-**Run the snakemake file
+
+**Configure bash/jq.sh file with name of particular exercise
+
+```
+
+$nano bash/jq.sh
+
+
+```
+
+![Screenshot from 2023-04-14 12-25-35](https://user-images.githubusercontent.com/129086783/232114737-eb9956e1-a2ee-4c90-a191-edbaba2fcd08.png)
+
+**In this case it is STRENGTH_TRAINING**
+
+**You can change it to any exercise as long as there is a record that you completed that exercise in your training.json files.**
+
+**The limitation to this workflow is you can only run one exercise per snakemake run.**
+
+**This means you have to run the workflow multiple times for different exercises.**
+
+**Just be sure to before running snakemake again delete everything in TextFiles and output Directories.**
+
+**You might want to save the Rplot.pdf file and rename it to say for example, Strength_Training_Rplot.pdf**
+
+**Run the snakemake file**
 
 ```
 
@@ -139,3 +163,14 @@ $snakemake --cores 2 RScript
 
 
 ![Screenshot from 2023-04-14 12-21-29](https://user-images.githubusercontent.com/129086783/232113906-6a491742-836f-44d9-a01d-c48a6385944a.png)
+
+
+**Finally we can inspect the Final.txt file which contains all relevant data.
+
+```
+
+$nano TextFiles/Final.txt
+
+```
+
+![Screenshot from 2023-04-14 12-23-51](https://user-images.githubusercontent.com/129086783/232114413-9d52e56d-9014-4141-880d-6dba9db31e4e.png)
