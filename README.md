@@ -30,9 +30,11 @@ You will also need to install snakemake.
 $ conda install -n base -c conda-forge mamba
 
 $ conda activate base
+
 $ mamba create -c conda-forge -c bioconda -n snakemake snakemake
 
 $ conda activate snakemake
+
 $ snakemake --help
 
 
