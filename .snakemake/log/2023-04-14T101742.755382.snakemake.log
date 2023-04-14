@@ -1,0 +1,46 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+Date                1              1              1
+HeartRateAvg        1              1              1
+HeartRateMax        1              1              1
+HeartRateMin        1              1              1
+Name                1              1              1
+RScript             1              1              1
+Sed                 1              1              1
+Sedfive             1              1              1
+Sedfour             1              1              1
+Sedthree            1              1              1
+Sedtwo              1              1              1
+StartTime           1              1              1
+all                 1              1              1
+kiloCalories        1              1              1
+paste               1              1              1
+total              15              1              1
+
+Select jobs to execute...
+
+[Fri Apr 14 10:17:43 2023]
+rule all:
+    output: output/ultranew.json
+    jobid: 5
+    reason: Missing output files: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:17:43 2023]
+Error in rule all:
+    jobid: 5
+    output: output/ultranew.json
+    shell:
+        bash/jq.sh > output/ultranew.json
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job all since they might be corrupted:
+output/ultranew.json
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-04-14T101742.755382.snakemake.log

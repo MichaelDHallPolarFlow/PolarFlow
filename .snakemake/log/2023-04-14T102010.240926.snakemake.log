@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+RScript        1              1              1
+total          1              1              1
+
+Select jobs to execute...
+
+[Fri Apr 14 10:20:10 2023]
+rule RScript:
+    input: TextFiles/Final.txt
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:20:12 2023]
+Error in rule RScript:
+    jobid: 0
+    input: TextFiles/Final.txt
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-04-14T102010.240926.snakemake.log

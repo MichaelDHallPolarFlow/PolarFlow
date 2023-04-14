@@ -1,0 +1,227 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+Date                1              1              1
+HeartRateAvg        1              1              1
+HeartRateMax        1              1              1
+HeartRateMin        1              1              1
+Name                1              1              1
+RScript             1              1              1
+Sed                 1              1              1
+Sedfive             1              1              1
+Sedfour             1              1              1
+Sedthree            1              1              1
+Sedtwo              1              1              1
+StartTime           1              1              1
+all                 1              1              1
+kiloCalories        1              1              1
+paste               1              1              1
+total              15              1              1
+
+Select jobs to execute...
+
+[Fri Apr 14 10:22:57 2023]
+rule all:
+    output: output/ultranew.json
+    jobid: 5
+    reason: Missing output files: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:22:58 2023]
+Finished job 5.
+1 of 15 steps (7%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:22:58 2023]
+rule Name:
+    input: output/ultranew.json
+    output: TextFiles/name.txt
+    jobid: 8
+    reason: Missing output files: TextFiles/name.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 14 10:22:58 2023]
+rule Date:
+    input: output/ultranew.json
+    output: TextFiles/date.txt
+    jobid: 4
+    reason: Missing output files: TextFiles/date.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:22:59 2023]
+Finished job 4.
+2 of 15 steps (13%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:22:59 2023]
+rule HeartRateAvg:
+    input: output/ultranew.json
+    output: TextFiles/heartrateavg.txt
+    jobid: 14
+    reason: Missing output files: TextFiles/heartrateavg.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:22:59 2023]
+Finished job 8.
+3 of 15 steps (20%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:22:59 2023]
+rule kiloCalories:
+    input: output/ultranew.json
+    output: TextFiles/kilocalories.txt
+    jobid: 9
+    reason: Missing output files: TextFiles/kilocalories.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:22:59 2023]
+Finished job 14.
+4 of 15 steps (27%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:22:59 2023]
+rule HeartRateMax:
+    input: output/ultranew.json
+    output: TextFiles/heartratemax.txt
+    jobid: 12
+    reason: Missing output files: TextFiles/heartratemax.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:22:59 2023]
+Finished job 9.
+5 of 15 steps (33%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:22:59 2023]
+rule StartTime:
+    input: output/ultranew.json
+    output: TextFiles/duration.txt
+    jobid: 11
+    reason: Missing output files: TextFiles/duration.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 12.
+6 of 15 steps (40%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:23:00 2023]
+rule HeartRateMin:
+    input: output/ultranew.json
+    output: TextFiles/heartratemin.txt
+    jobid: 13
+    reason: Missing output files: TextFiles/heartratemin.txt; Input files updated by another job: output/ultranew.json
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 11.
+7 of 15 steps (47%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:23:00 2023]
+rule Sedtwo:
+    input: TextFiles/date.txt
+    output: TextFiles/date2.txt
+    jobid: 3
+    reason: Missing output files: TextFiles/date2.txt; Input files updated by another job: TextFiles/date.txt
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 3.
+8 of 15 steps (53%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:23:00 2023]
+rule Sedfour:
+    input: TextFiles/name.txt
+    output: TextFiles/name2.txt
+    jobid: 7
+    reason: Missing output files: TextFiles/name2.txt; Input files updated by another job: TextFiles/name.txt
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 7.
+9 of 15 steps (60%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:23:00 2023]
+rule Sedfive:
+    input: TextFiles/name2.txt
+    output: TextFiles/name3.txt
+    jobid: 6
+    reason: Missing output files: TextFiles/name3.txt; Input files updated by another job: TextFiles/name2.txt
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 13.
+10 of 15 steps (67%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Fri Apr 14 10:23:00 2023]
+rule Sed:
+    input: TextFiles/duration.txt
+    output: TextFiles/duration2.txt
+    jobid: 10
+    reason: Missing output files: TextFiles/duration2.txt; Input files updated by another job: TextFiles/duration.txt
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 6.
+11 of 15 steps (73%) done
+Select jobs to execute...
+
+[Fri Apr 14 10:23:00 2023]
+rule Sedthree:
+    input: TextFiles/date2.txt
+    output: TextFiles/date3.txt
+    jobid: 2
+    reason: Missing output files: TextFiles/date3.txt; Input files updated by another job: TextFiles/date2.txt
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 10.
+12 of 15 steps (80%) done
+[Fri Apr 14 10:23:00 2023]
+Finished job 2.
+13 of 15 steps (87%) done
+Select jobs to execute...
+
+[Fri Apr 14 10:23:00 2023]
+rule paste:
+    input: TextFiles/date3.txt, TextFiles/name3.txt, TextFiles/kilocalories.txt, TextFiles/duration2.txt, TextFiles/heartratemax.txt, TextFiles/heartratemin.txt, TextFiles/heartrateavg.txt
+    output: TextFiles/Final.txt
+    jobid: 1
+    reason: Missing output files: TextFiles/Final.txt; Input files updated by another job: TextFiles/heartratemin.txt, TextFiles/date3.txt, TextFiles/name3.txt, TextFiles/kilocalories.txt, TextFiles/duration2.txt, TextFiles/heartratemax.txt, TextFiles/heartrateavg.txt
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:00 2023]
+Finished job 1.
+14 of 15 steps (93%) done
+Select jobs to execute...
+
+[Fri Apr 14 10:23:00 2023]
+rule RScript:
+    input: TextFiles/Final.txt
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+
+[Fri Apr 14 10:23:02 2023]
+Finished job 0.
+15 of 15 steps (100%) done
+Complete log: .snakemake/log/2023-04-14T102257.010258.snakemake.log
