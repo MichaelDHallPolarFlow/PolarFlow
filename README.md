@@ -39,3 +39,6 @@ $ snakemake --help
 ![Screenshot from 2023-04-14 11-14-15](https://user-images.githubusercontent.com/129086783/232099338-d7443b3e-8f83-4b96-9211-34a2b0096799.png)
 
 
+Now you must clone the Github Repository
+
+$git clone https://github.com/MichaelDHallPolarFlow/PolarFlow.git
