@@ -4,6 +4,35 @@ I wanted to make a standardized data analysis workflow for PolarFlow. For those 
 
 In my workflow I basically parse the (.JSON) training data with jq. Currenlty I am on Jammy version of Linux Ubuntu...
 
+It is very important to consider whether you have properly installed conda. Please visit this website and choose the correct version for you operating system. I prefer a minimalist installation of conda with miniconda.
+
+https://docs.conda.io/en/latest/miniconda.html
+
+You will then see a bash file downloading that looks similar to this.
+
+Miniconda3-latest-Linux-x86_64.sh
+
+And then execute the bash script
+
+$bash Miniconda3-latest-Linux-x86_64.sh
+
+Verify it has been installed.
+
+$which conda
+
+/home/user/miniconda3/condabin/conda
+
+Which version of conda?
+$conda --version
+conda 23.3.1
+
+If you need help
+$conda --help
+
+#########################################################################################################################
+Verify your linux OS
+
+
 $lsb_release -a
 
 Distributor ID:	Ubuntu
@@ -12,7 +41,13 @@ Release:	22.04
 Codename:	jammy
 
 
+You can install all necessary prerequisite software by issuing the following command.
 
+$bash install.sh
+
+####################################################################################################
+
+If you want to do it step by step.
 
 $sudo apt update
 
