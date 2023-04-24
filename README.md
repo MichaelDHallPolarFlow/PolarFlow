@@ -156,8 +156,8 @@ snakemake --cores 2 RScript
 nano TextFiles/Final.txt
 
 ```
+![Screenshot from 2023-04-24 13-41-50](https://user-images.githubusercontent.com/129086783/234087060-30c45558-1d52-4065-95bc-485539153f23.png)
 
-![Screenshot from 2023-04-14 12-23-51](https://user-images.githubusercontent.com/129086783/232114413-9d52e56d-9014-4141-880d-6dba9db31e4e.png)
 
 
 **This is the input file for the Rscript which produces the Rplot.pdf file**
