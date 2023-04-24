@@ -1,5 +1,14 @@
 Final <- read.table(file = snakemake@input[['txt']], header = FALSE)
 
+.libPaths()
+
+search()
+
+r = getOption("repos")
+r["CRAN"] = "https://cloud.r-project.org/"
+options(repos = r)
+
+
 colnames(Final)[1] = "Date"
 colnames(Final)[2] = "Name"
 colnames(Final)[3] = "KiloCalories"
@@ -8,9 +17,11 @@ colnames(Final)[5] = "HeartRateMax"
 colnames(Final)[6] = "HeartRateMin"
 colnames(Final)[7] = "HeartRateAvg"
 
-library(ggplot2)
-library(tidyr)
-library(car)
+install.packages(c("ggplot2","tidyr", "car"))
+library("ggplot2")
+library("tidyr")
+library("car")
+
 attach(Final)
 
 print(Final)
