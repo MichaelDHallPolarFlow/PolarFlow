@@ -159,10 +159,6 @@ snakemake --cores 2 RScript
 ![Screenshot from 2023-04-14 12-20-03](https://user-images.githubusercontent.com/129086783/232113682-fba2b1dd-4471-48ce-802e-5c1a49495351.png)
 
 
-**It print the data with accurate headings
-
-![Screenshot from 2023-04-14 12-34-55](https://user-images.githubusercontent.com/129086783/232117327-a141ff95-48c4-493c-b78c-33a13f9b59d3.png)
-
 
 
 **And the new tree
