@@ -149,14 +149,6 @@ snakemake --cores 2 RScript
 ![Screenshot from 2023-04-14 12-20-03](https://user-images.githubusercontent.com/129086783/232113682-fba2b1dd-4471-48ce-802e-5c1a49495351.png)
 
 
-
-
-**And the new tree
-
-
-![Screenshot from 2023-04-14 12-21-29](https://user-images.githubusercontent.com/129086783/232113906-6a491742-836f-44d9-a01d-c48a6385944a.png)
-
-
 **Finally we can inspect the Final.txt file which contains all relevant data.
 
 ```
