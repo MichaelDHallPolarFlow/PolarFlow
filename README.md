@@ -109,16 +109,6 @@ git clone https://github.com/MichaelDHallPolarFlow/PolarFlow.git
 cd PolarFlow
 
 ```
-**Make a tree 
-
-```
-tree
-```
-
-***Here is a screen shot
-
-![Screenshot from 2023-04-14 12-16-37](https://user-images.githubusercontent.com/129086783/232112980-815939fe-8415-4d36-8851-1aad3bcf8bbe.png)
-
 
 **Configure bash/jq.sh file with name of particular exercise
 
