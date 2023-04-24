@@ -15,12 +15,12 @@ You will then see a bash file downloading that looks similar to this.
 And then execute the bash script
 
 ```
-$bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 **Verify it has been installed.**
 
 ```
-$which conda
+which conda
 
 /home/user/miniconda3/condabin/conda
 
@@ -28,7 +28,7 @@ $which conda
 **Which version of conda?
 
 ```
-$conda --version
+conda --version
 
 conda 23.3.1
 
@@ -37,14 +37,14 @@ conda 23.3.1
 **If you need help
 
 ```
-$conda --help
+conda --help
 
 ```
 
 **Verify your linux OS
 
 ```
-$lsb_release -a
+lsb_release -a
 
 Distributor ID:	Ubuntu
 Description:	Ubuntu 22.04.2 LTS
@@ -55,7 +55,7 @@ Codename:	jammy
 **You can install all necessary prerequisite software by issuing the following command.
 
 ```
-$bash install.sh
+bash install.sh
 
 ```
 
@@ -63,15 +63,15 @@ $bash install.sh
 ***If you want to do it step by step.
 
 ```
-$sudo apt update
+sudo apt update
 
-$sudo apt install -y jq
+sudo apt install -y jq
 
 ```
 **When installation is finished, check jq version:
 
 ```
-$jq --version
+jq --version
 
 jq-1.6
 
@@ -79,15 +79,15 @@ jq-1.6
 **You will also need to install snakemake.
 
 ```
-$ conda install -n base -c conda-forge mamba
+conda install -n base -c conda-forge mamba
 
-$ conda activate base
+conda activate base
 
-$ mamba create -c conda-forge -c bioconda -n snakemake snakemake
+mamba create -c conda-forge -c bioconda -n snakemake snakemake
 
-$ conda activate snakemake
+conda activate snakemake
 
-$ snakemake --help
+snakemake --help
 
 ```
 
@@ -98,7 +98,7 @@ $ snakemake --help
 
 ```
 
-$git clone https://github.com/MichaelDHallPolarFlow/PolarFlow.git
+git clone https://github.com/MichaelDHallPolarFlow/PolarFlow.git
 
 ```
 
@@ -106,13 +106,13 @@ $git clone https://github.com/MichaelDHallPolarFlow/PolarFlow.git
 
 ```
 
-$cd PolarFlow
+cd PolarFlow
 
 ```
 **Make a tree 
 
 ```
-$tree
+tree
 ```
 
 ***Here is a screen shot
@@ -124,7 +124,7 @@ $tree
 
 ```
 
-$nano bash/jq.sh
+nano bash/jq.sh
 
 
 ```
@@ -147,7 +147,7 @@ $nano bash/jq.sh
 
 ```
 
-$snakemake --cores 2 RScript
+snakemake --cores 2 RScript
 
 ```
 
@@ -175,7 +175,7 @@ $snakemake --cores 2 RScript
 
 ```
 
-$nano TextFiles/Final.txt
+nano TextFiles/Final.txt
 
 ```
 
